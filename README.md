@@ -1,2 +1,2 @@
-# wc-template
+# Web challenge template
 Web challenge template
