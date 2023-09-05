@@ -1,56 +1,44 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Challenge</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web challenge template</title>
     <link href="assets/css/main.min.css" rel="stylesheet">
-  </head>
-  <body class="d-flex flex-column h-100">
-    <div class="container-fluid">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            <span class="fs-4">Anak IT Web Challenge</span>
-        </a>
-        </header>
-    </div>
-    <main>
-    <div class="container">     
-        <div class="container mt-5">
-        <h1>Welcome to Web Challenge - Beginner Level</h1>
-            <form action="submit.php" method="post">
-                <div class="mb-3">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" name="fullName" required>
-                </div>
-                <div class="mb-3">
-                    <label for="icNumber" class="form-label">IC Number</label>
-                    <input type="text" class="form-control" id="icNumber" name="icNumber" required>
-                </div>
-                <div class="mb-3">
-                    <label for="terms" class="form-label">Terms and Conditions</label>
-                    <p>
-<ol>
-<li>This particular "Web Challenge" is strictly for invited participants only</li>
-<li>Each participant must register with valid IC Number</li>
-<li>Recommended to not share your method on going to the next level. We can't stop you, but that might cost your chances of winning &#x1F604;</li>
-<li>Do not ask assistance from other adults, lecturer etc. You can Google or ask some "hints"</li>
-<li>Absolutely no interfering with the website / web server. This includes, but is not limited to: DDoS, DoS, exploit, brute forcing the web server, and any other method of attack.</li>
-</ol>
-Anyone caught in violation of these rules will be removed from the challenge and further action will be taken if needed.
-<p>
-                </div>
-                <button type="submit" class="btn btn-primary">Agree and Submit</button>
-            </form>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- ========== Start Navbar ========== -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-xxl">
+            <a href="#" class="navbar-brand">
+                Web Challenge
+            </a>
         </div>
-    </div>
-</main>
-<footer class="footer mt-auto py-3 bg-body-tertiary">
-  <div class="container">
-    <span class="text-body-secondary">Place sticky footer content here.</span>
-  </div>
-</footer>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+    </nav>
+    <!-- ========== End Navbar ========== -->
+    <!-- ========== Start Registration form ========== -->
+    <section id="registration">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items center">
+                <form action="">
+                    <label for="name" class="form-label">Full Name</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-fill text-secondary"></i>
+                        </span>
+                        <input type="text" id="name" class="form-control" autocomplete="off">
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button class="btn btn-primary" type="submit">Agree and Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Registration form ========== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
